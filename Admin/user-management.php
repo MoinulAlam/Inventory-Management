@@ -14,6 +14,7 @@
             <div class="logo">Admin Panel</div>
             <nav>
                 <ul>
+                    
                     <li><a href="admin-dashboard.php">Dashboard</a></li>
                     <li><a href="user-management.php" class="active">User Management</a></li>
                     <li><a href="warehouse-management.php">Warehouse Management</a></li>

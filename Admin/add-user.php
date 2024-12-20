@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
+
     // Hash the password
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
@@ -19,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("isss", $user_id, $role, $username, $hashed_password);
 
+    
     if ($stmt->execute()) {
         echo json_encode(['success' => true]);
     } else {

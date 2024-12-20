@@ -13,6 +13,8 @@ if (!$registration_no || !$vehicle_type || !$capacity || !$min_temp || !$max_tem
     exit;
 }
 
+
+
 $sql = "INSERT INTO vehicle (Registration_No, Vehicle_Type, Capacity, Min_Temp, Max_Temp, Warehouse_ID) 
         VALUES (?, ?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
